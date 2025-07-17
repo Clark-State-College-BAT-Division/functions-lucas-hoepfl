@@ -21,8 +21,8 @@ def GetIntegerFromUser (promptMessage, errorMessage):
 
 
 def Main():
-    x = GetIntegerFromUser("Give me an integer> ", "That's not an integer!")
-    print(x * 2)
+    x = GetIntegerFromUser("Give me an integer: \n", "That's not an integer!")
+    print("You entered the integer: ", x)
 
 
 
