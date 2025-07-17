@@ -19,6 +19,26 @@
 # How many sides? 20
 # Here are the results: [18, 19, 6, 8, 13, 6, 6, 6, 18, 12, 20, 10, 14, 8, 14, 17, 12, 15, 20, 17]
 
+import random
+
+def dice_roll(dice_quantity, dice_num_sides):
+    all_rolls = []
+    for _ in range(dice_quantity):
+        single_roll = random.randint(1, dice_num_sides)
+        all_rolls.append(single_roll)
+    return all_rolls
+
+def main_function():
+    while True:
+        dice_quantity = int(input("How many dice are you rolling? "))
+        dice_num_sides = int(input("How many sides do your dice have? "))
+        if dice_num_sides >= 1 and dice_quantity >= 0:
+            break
+        else:
+            print("Dice must have more than 1 side and you must roll at least 1 die.")
+    all_rolls = dice_roll(dice_quantity, dice_num_sides)
+    print("You rolled: ", all_rolls)
 
 
-# Is it possible to make this program without using input statements and print statements?
+if __name__ == "__main__":
+    main_function()
