@@ -1,6 +1,6 @@
 #Write a function that takes as input number of dice and number of sides. The function will then return a list
-#of randomly generated numbers in the proper count and range. For example if the the function is asked to generate
-#3D6 or three sixed sided dice, then a potential output would be [2,2,6]
+#of randomly generated numbers in the proper count and range. For example if the function is asked to generate
+#3D6 or three six sided dice, then a potential output would be [2,2,6]
 #This function cannot have any input or print statements.
 #Write supporting code that will ask the user for number of dice and sides, call the function, then report the results.
 #The function should not be called if number of dice is zero or less and instead should report bad input to the user
@@ -19,3 +19,6 @@
 # How many sides? 20
 # Here are the results: [18, 19, 6, 8, 13, 6, 6, 6, 18, 12, 20, 10, 14, 8, 14, 17, 12, 15, 20, 17]
 
+
+
+# Is it possible to make this program without using input statements and print statements?
